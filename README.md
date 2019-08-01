@@ -1,3 +1,8 @@
+# NOTE:
+The Angular features I've used here: interfaces, services, components, event emitter, form modules, pagination module, and httpclient module.
+Please pay attention to the fact that upon requesting to API custom loader is created and used. I've used 2 types of subscribing to API response: as promise (async await OR .than()) AND Angular default subscribe functionality. 
+For API I've used https://jsonplaceholder.typicode.com/ , which imitates work with posts.
+
 # Test
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {LoaderService} from './services/loader.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test';
+  visible: boolean = true;
+
+  constructor(private loaderService: LoaderService) {
+    this.loaderService.loader.subscribe((visible: boolean) => {
+      this.visible = visible;
+    });
+  }
+
 }
